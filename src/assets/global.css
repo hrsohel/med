@@ -1,0 +1,92 @@
+.container {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 100%;
+    min-height: 100%;
+    background: white;
+    transform: translateX(-50%);
+}
+
+.container table {
+    width: 100%;
+    text-align: center;
+    margin: 1rem 0;
+}
+.container table tr td, .container table tr th {
+    border: 1px solid black;
+    padding: 5px;
+    cursor: pointer;
+}
+.container table tr:nth-child(even)  {
+    background-color: skyblue;
+}
+.container table tr:nth-child(odd)  {
+    background-color: lightgray;
+}
+.container table tr:hover {
+    background-color: gray;
+    color: white;
+}
+.container table .check-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4;
+    margin: 1rem 0;
+}
+.container .buttons {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .buttons .all-button {
+    background-color: white;
+    color: #46139f;
+    padding: .2rem 1rem;
+    border: 1px solid #46139f;
+    border-radius: .3rem;
+    text-decoration: none;
+}
+.container .buttons .us-button {
+    background-color: white;
+    color: #ff7f50;
+    padding: .2rem 1rem;
+    border: 1px solid #ff7f50;
+    border-radius: .3rem;
+    text-decoration: none;
+    margin: 0 .5rem;
+}
+.container .buttons .cancel-button {
+    background-color: white;
+    color: #333;
+    padding: .2rem 1rem;
+    border: 1px solid #46139f;
+    border-radius: .3rem;
+    text-decoration: none;
+}
+
+.modelc-container {
+    /* background-color: rgba(0, 0, 0, .5); */
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modelc-container div {
+    width: 20%;
+    background-color: white;
+    color: #333;
+    padding: 1rem;
+}
+.modelc-container div h3 {
+    color: #333;
+}
+.modelc-container div p {
+    color: #666;
+}
